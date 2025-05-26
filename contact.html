@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="Author" content="Jamie Wright">
+  <title>Contact</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./images/COVERT.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Desktop Menu -->
+  <header>
+    <div id="header-wrapper">
+      <h1 id="header-title"> 
+        <a href="home.html">
+          <img src="./images/COVERT_named.png" height="100" />
+        </a>
+      </h1>
+      <div id="menu-desktop">
+        <nav class="desktop-nav">
+          <ul>
+              <li><a class="menu-item-text" href="home.html">Home</a></li>
+              <li><a class="menu-item-text" href="about.html">About</a></li>
+              <li><a class="menu-item-text" href="publications.html">Publications</a></li>
+              <li><a class="menu-item-text" href="members.html">Members</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+  <div id="wrapper">
+
+    <!-- Mobile Menu -->
+    <div id="menu-mobile" class="sticky">
+      <nav>
+        <div class="collapsible-menu">
+          <input type="checkbox" id="menu">
+          <label for="menu">COVERT</label>
+          <div class="menu-content">
+            <ul id="header-menu">
+              <li><a class="menu-item-text" href="home.html">Home</a></li>
+              <li><a class="menu-item-text" href="about.html">About</a></li>
+              <li><a class="menu-item-text" href="publications.html">Publications</a></li>
+              <li><a class="menu-item-text" href="members.html">Members</a></li>
+            </ul>
+          </div>            
+        </div>        
+      </nav>
+    </div>
+  
+    <h1>Contact us</h1>
+
+    <main>
+      <h2>Email</h2>
+      <p>Get in touch using this form and we will get back to you with more details!</p>
+      
+      <form name="emailComment" data-formid="451" method="post" enctype="text/plain" action="mailto:jwright8@sheffield.ac.uk?subject=COVERT Enquiry" onsubmit="alert('Mail Sent');">
+        <label class="formInput" for="name">Name <span class="required">*</span></label>
+        <input type="name" id="Name" required>
+        
+        <label class="formInput" for="emailAddress">Email <span class="required">*</span></label>
+        <input type="email" id="emailAddress" name="emailAddress" required>
+      
+        <label for="comment">Comment or Message</label>
+        <textarea id="comment" name="comment" style="height:200px"></textarea>
+          
+        <div id="formButtons">
+          <input type="submit" name="submit" id="submit" value="Submit">
+        </div>
+          
+      </form>
+      
+<!-- from another page like this, 
+        <div class="wpforms-field-row-block wpforms-one-half"><input type="text" id="wpforms-451-field_0-last" class="wpforms-field-name-last wpforms-field-required" name="wpforms[fields][0][last]" required><label for="wpforms-451-field_0-last" class="wpforms-field-sublabel after ">Last</label></div></div></div><div id="wpforms-451-field_1-container" class="wpforms-field wpforms-field-email" data-field-id="1"><label class="wpforms-field-label" for="wpforms-451-field_1">Email <span class="wpforms-required-label">*</span></label><input type="email" id="wpforms-451-field_1" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][1]" required></div><div id="wpforms-451-field_3-container" class="wpforms-field wpforms-field-text" data-field-id="3"><label class="wpforms-field-label" for="wpforms-451-field_3">Subject <span class="wpforms-required-label">*</span></label><input type="text" id="wpforms-451-field_3" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][3]" required></div><div id="wpforms-451-field_2-container" class="wpforms-field wpforms-field-textarea" data-field-id="2"><label class="wpforms-field-label" for="wpforms-451-field_2">Comment or Message</label><textarea id="wpforms-451-field_2" class="wpforms-field-medium" name="wpforms[fields][2]" ></textarea><div class="wpforms-field-description">*By submitting the form you accept <a href="https://www.rewire-he.eu/rewire-privacy-cookies-policy/"><u>REWIRE Privacy & Cookies Policy</u></a></div></div></div><div class="wpforms-submit-container"><input type="hidden" name="wpforms[id]" value="451"><input type="hidden" name="wpforms[author]" value="1"><input type="hidden" name="wpforms[post_id]" value="23"><button type="submit" name="wpforms[submit]" id="wpforms-submit-451" class="wpforms-submit" data-alt-text="Sending..." data-submit-text="Submit" aria-live="assertive" value="wpforms-submit">Submit</button><img decoding="async" src="https://www.rewire-he.eu/wp-content/plugins/wpforms-lite/assets/images/submit-spin.svg" class="wpforms-submit-spinner" style="display: none;" width="26" height="26" alt="Loading"></div></form>
+-->
+
+    </main>
+    
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <nav class="footer-style">
+      <ul id="footer-menu">
+        <li class="footer-link"><a class="footer-text" href="accessibility.html">Accessibility</a></li>
+        <li class="footer-link"><a class="footer-text" href="legal.html">Legal</a></li>
+        <li class="footer-link"><a class="footer-text" href="contact.html">Contact</a></li> 
+      </ul>
+    </nav>     
+    <p class="footer-info">Copyright © * COVERT Project * All Rights Reserved</p>   
+  </footer> 
+</body>
+
+</html>
