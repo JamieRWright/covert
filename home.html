@@ -29,6 +29,7 @@
           <ul>
               <li><a class="menu-item-text" href="home.html">Home</a></li>
               <li><a class="menu-item-text" href="about.html">About</a></li>
+              <li><a class="menu-item-text" href="news.html">News</a></li>
               <li><a class="menu-item-text" href="publications.html">Publications</a></li>
               <li><a class="menu-item-text" href="members.html">Members</a></li>
           </ul>
@@ -49,6 +50,7 @@
             <ul id="header-menu">
               <li><a class="menu-item-text" href="home.html">Home</a></li>
               <li><a class="menu-item-text" href="about.html">About</a></li>
+              <li><a class="menu-item-text" href="news.html">News</a></li>
               <li><a class="menu-item-text" href="publications.html">Publications</a></li>
               <li><a class="menu-item-text" href="members.html">Members</a></li>
             </ul>
@@ -78,18 +80,102 @@
       </a>
     </div>      
     </div>
-    
-    <div class="cover-image">
-      <img src="./images/uos.webp" width="300">
-    </div>
 
     <!--Our vision-->
     <main>
-      <h1 id="aboutus">Our vision</h1>
+      <div class="Alt-sect">
+      <h1>Our vision</h1>
       <p>
           Our vision is to provide reusable models, tools and techniques that enable the verification of safety and security properties over a range of advanced architectures, and a verified set of concurrency abstractions that guarantee both safety and security.
-          <a class="inline-link" href="contact.html">contact us</a> 
       </p>
+      </div>
+
+      <div class="flex-card">
+          <div class="flex-card-content">
+            <div class="flex-card-text">
+              <h2 class="card-title">Latest News</h2>
+              <h3 class="card-description">Headline - Date</h3>
+              <p class="card-description">
+                Article goes here
+              </p>
+            </div>     
+            
+            <a class="card-links" href="news.html">
+              <div class="card-highlight">
+                <h3>More News</h3>
+              </div>
+            </a>
+
+          </div>      
+      </div>
+
+      <div id="partners">
+      <div class="Alt-sect"><h1 >Our Partners</h1></div>
+      <div class="partner-carousel-wrapper">
+        <button class="scroll-btn left">&#8249;</button>
+
+        <div class="partner-carousel">
+          <a href="https://www.sheffield.ac.uk/" target="_blank">
+            <img src="images/TUOS.png" alt="University Of Sheffield">
+          </a>
+          <a href="https://www.surrey.ac.uk/" target="_blank">
+            <img src="images/UOSurrey.png" alt="University Of Surrey">
+          </a>
+          <a href="https://www.kent.ac.uk/" target="_blank">
+            <img src="images/UOK.png" alt="University Of Kent">
+          </a>
+
+          <a href="https://vetss.org.uk/" target="_blank">
+            <img src="images/VeTSS.png" alt="VeTSS">
+          </a>
+          <!-- Add more as needed -->
+        </div>
+        <button class="scroll-btn right">&#8250;</button>
+
+        <script>  
+          const carousel = document.querySelector('.partner-carousel');
+          const leftBtn = document.querySelector('.scroll-btn.left');
+          const rightBtn = document.querySelector('.scroll-btn.right');
+          const wrapper = document.querySelector('.partner-carousel-wrapper');
+
+          const scrollStep = 1;
+          const scrollInterval = 30; 
+          let scrollDirection = 1;
+          let autoScroll;
+
+          leftBtn.addEventListener('click', () => {
+            carousel.scrollBy({ left: -200, behavior: 'smooth' });
+          });
+
+          rightBtn.addEventListener('click', () => {
+            carousel.scrollBy({ left: 200, behavior: 'smooth' });
+          });
+
+          function startAutoScroll() {
+            autoScroll = setInterval(() => {
+              carousel.scrollBy({ left: scrollDirection * scrollStep, behavior: 'smooth' });
+
+              const atEnd = carousel.scrollLeft + carousel.offsetWidth >= carousel.scrollWidth - 1;
+              const atStart = carousel.scrollLeft <= 0;
+
+              if (atEnd) scrollDirection = -1;
+              if (atStart) scrollDirection = 1;
+            }, scrollInterval);
+          }
+
+          function stopAutoScroll() {
+            clearInterval(autoScroll);
+          }
+
+          // Start scrolling initially
+          startAutoScroll();
+
+          // Pause on hover
+          wrapper.addEventListener('mouseenter', stopAutoScroll);
+          wrapper.addEventListener('mouseleave', startAutoScroll);
+
+        </script>
+      </div>
   
       <a id="button-link" href="#top">
         <div id="button">

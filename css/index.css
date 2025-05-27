@@ -119,6 +119,7 @@ input#menu {
 .menu-item-text {
 	color: #0b96e0;
 	text-decoration: none;
+  	border-bottom: 2px solid black;
 }
 
 #menu-desktop {
@@ -146,15 +147,20 @@ input {
 	width: 100%;
 	height: 50px;
 }
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 .Names input{
   float:left;
 }
-input#emailAddress{
-	height: auto;
-	margin: 0px 0px 20px 0px;
-
-}
-
 textarea {
 	resize: none;
 	margin: 0px 0px 20px 0px;
@@ -345,7 +351,96 @@ section {
 
 main {
 	flex: 1;
+	background-color: #FFFFFF;
 }
+
+.Alt-sect  h1{
+    color: #0b96e0;
+	display: flex;
+	text-align: center; 
+	align-items: center;
+	justify-content: center;
+}
+
+.Alt-sect  p{
+    color: #222a2a;
+	display: flex;
+	text-align: center; 
+	align-items: center;
+	justify-content: center;
+}
+
+/*Partners carosuel*/
+
+#partners {
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.partner-carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.partner-carousel {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 20px;
+  scrollbar-width: none; /* Firefox */
+}
+
+.partner-carousel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.partner-carousel a {
+  flex: 0 0 auto;
+}
+
+.partner-carousel img {
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.partner-carousel img:hover {
+  transform: scale(1.05);
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #0b96e0;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 2rem;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-btn:hover {
+  background-color: #0b95e07e;
+}
+
+.scroll-btn.left {
+  left: 10px;
+}
+
+.scroll-btn.right {
+  right: 10px;
+}
+/*--------------------------*/
 
 img {
 	width: 100%;
@@ -380,7 +475,7 @@ img {
 form {
 	display: flex;
 	flex-direction: column;
-	color: #FFFFFF;
+	color: #0b96e0;
     font-family: "Atkinson Hyperlegible", Helvetica, sans-serif;
     font-weight: 400;
 	margin: 10px;
@@ -521,6 +616,14 @@ form {
 	width: 100%;
 }
 
+.card-links {
+	padding: 0;
+	margin: 0px 10px 0px 10px;
+	text-decoration: none;
+	width: 100%;
+	color: #0b96e0;
+}
+
 .card-icon {
 	width: 24px;
 	height: 24px;
@@ -622,5 +725,10 @@ form {
 
 	.spoiler-content {
 		width: 90%;
+		
+	}
+
+	.menu-item-text{
+		border-bottom: none;
 	}
 }
