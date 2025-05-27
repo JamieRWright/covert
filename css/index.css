@@ -30,10 +30,14 @@ h3 {
 	transition: 0.25s;
 }
 
+.Covert-colour{
+	color: #0b96e0;
+}
+
 header {
 	width: 100%;
 	box-shadow: 0 1px 3px rgba(0,0,0,.25);
-	background-color: #2d7e86;
+	background-color: #FFFFFF;
 	height: 0px;
 	padding: 0px;
 	display: flex;
@@ -73,7 +77,7 @@ header {
 }
 
 .collapsible-menu label {
-	color: #FFFFFF;
+	color: #0b96e0;
     font-family: 'Atkinson Hyperlegible', sans-serif;
 	font-weight: 700;
     font-size: 20px;
@@ -99,9 +103,9 @@ header {
 }
 
 .menu-logo img {
-  height: 40px;      /* Adjust this height to fit your design */
+  height: 60px;      
   width: auto;       /* Keeps aspect ratio */
-  max-width: 150px;  /* Optional max width */
+  max-width: 150px;  
   display: inline-block;
   object-fit: contain;
   vertical-align: middle;
@@ -113,7 +117,7 @@ input#menu {
 }
 
 .menu-item-text {
-	color: #FFFFFF;
+	color: #0b96e0;
 	text-decoration: none;
 }
 
@@ -214,7 +218,7 @@ nav {
 	box-shadow: 0 1px 3px rgba(0,0,0,.25);
 	padding-top: 10px;
 	padding-bottom: 10px;
-	background-color: #2d7e86;
+	background-color: #FFFFFF;
 }
 
 nav ul {
@@ -233,7 +237,7 @@ nav ul {
 	align-items: center;
 	justify-content: space-between;
 	box-shadow: none;
-	background-color: #2d7e86;
+	background-color: #FFFFFF;
 }
 
 p {
@@ -252,7 +256,11 @@ a {
 }
 
 a:hover {
-	color: #a6d5d9;
+	color: #0b95e07e;
+}
+
+.footer-text:hover {
+	color: #0b96e0;
 }
 
 .collapsible-menu a {
@@ -287,7 +295,7 @@ input {
 }
 
 .inline-link {
-	color: #39aeb7;
+	color: #0b96e0;
 	margin: 0px;
 	padding: 0px;
 }
@@ -452,10 +460,12 @@ form {
 	z-index: 0;
 }
 
+
+
 .card-highlight {
 	display: flex;
 	flex-direction: row;
-	background-color: #455354;
+	background-color: #0b96e0;
 	box-shadow: 0 1px 3px rgba(0,0,0,.25);
 	padding: 0px;
 	border-radius: 10px;
@@ -466,7 +476,7 @@ form {
 	transition: 0.25s;
 }
 .card-highlight:hover {
-	background-color: #5c6f70;
+	background-color: #0b95e07e;
 }
 
 .card-spoiler {
@@ -567,6 +577,34 @@ form {
 		justify-content: space-between;
 		align-items: center;
 	}
+
+	.flex-card-content-header {
+		flex: 2;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	
+	.flex-card-header {
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+		gap: 2rem;
+		padding: 2rem;
+		flex-wrap: wrap;
+	}
+
+	.covert-tag {
+		box-shadow: 0 1px 3px rgba(0,0,0,.25);
+		max-width: 40%;
+		border-radius: 10px;
+		object-fit: cover;
+		position: unset;
+		z-index: 0;
+	}
+
+
 
 	.card-image {
 		max-width: 50%;
