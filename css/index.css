@@ -372,21 +372,66 @@ main {
 
 /*objectives*/
 
-.obj-sect  h1{
-    color: #0b96e0;
-	display: flex;
-	text-align: center; 
-	align-items: center;
-	justify-content: center;
-}
+    .objectives-section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    }
+	.objectives-section  h1{
+		color: #0b96e0;
+		display: flex;
+		text-align: center; 
+		align-items: center;
+		justify-content: center;
+	}
 
-.obj-sect  p{
-    color: #222a2a;
-	display: flex;
-	text-align: left; 
-	align-items: left;
-	justify-content: left;
-}
+    .objectives-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #333;
+    }
+
+    .objective {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      transition: transform 0.3s ease;
+      align-items: flex-start;
+  	  border-bottom: 2px solid black;
+    }
+
+	.objective:hover {
+		transform: scale(1.05);
+	}
+
+    .objective-number {
+      flex-shrink: 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #0b96e0;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+    }
+
+    .objective-text {
+      max-width: 750px;
+    }
+
+    .objective-text h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.2rem;
+      color: #222;
+    }
+
+    .objective-text p {
+      margin: 0;
+      color: #555;
+	  padding-bottom: 40px;
+    }
 
 
 /*Partners carosuel*/

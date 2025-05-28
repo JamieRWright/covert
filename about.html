@@ -58,16 +58,36 @@
     </div>
   
     <h1>About</h1>
-    <p>SOme works</p>
+    <p>The continuing evolution of computing hardware has led to enormously complex architectures with execution models that integrate advanced memory technologies and hardware models. This evolution affects all devices, ranging from large-scale data centres to mobile phones. However, these advanced architectures break assumptions that programmers have relied on, causing new safety bugs and security vulnerabilities.
+      <br><br>
+      We target multi-processor systems and concurrent architectures, thus support the development of concurrent programs.
+      Concurrent behaviour is notoriously difficult -- incorrect synchronisation can lead to many dangerous safety and security vulnerabilities, ranging from "out-of-bounds writes" and "use-after-free" errors to "improper synchronisation and race conditions". Further, architecture-based attacks (e.g., Spectre) show the urgency of addressing these important problems today.
+      <br><br>
+      Even when low-level programs are well synchronised, the design of the underlying concurrent algorithms can themselves be vulnerable. In particular, well-understood safety conditions such as linearizability do not guarantee security, and current approaches to addressing this issue lead to overly synchronised implementations (degrading performance). This introduces a tension between the goals of the hardware designers (who aim to maximise performance), and end users (who require trustworthy software). In the middle are developers, who are tasked with producing software that balances this tension. COVERT provides mechanisms for provably correct reusable abstractions that maximise flexibility in program design, allowing fine-tuning of both safety and security guarantees based on the architecture.
+      </p>
 
     <!--Our vision-->
     <main>
-      <div class="obj-sect">
+      <section class="objectives-section">
       <h1>Our objectives</h1>
-      <p>
-          Our vision is to provide reusable models, tools and techniques that enable the verification of safety and security properties over a range of advanced architectures, and a verified set of concurrency abstractions that guarantee both safety and security.
-      </p>
+      <div class="objective">
+        <div class="objective-number">01</div>
+        <div class="objective-text">
+          <h3>Reusability</h3>
+          <p>Provide reusable models, tools and techniques that enable the verification of safety and security properties over a range of advanced architectures</p>
+        </div>
       </div>
+
+      <div class="objective">
+        <div class="objective-number">02</div>
+        <div class="objective-text">
+          <h3>Verification</h3>
+          <p>Provide a verified set of concurrency abstractions that guarantee both safety and security.</p>
+        </div>
+      </div>
+
+      <!-- Add more objectives as needed -->
+    </section>
   
       <a id="button-link" href="#top">
         <div id="button">
