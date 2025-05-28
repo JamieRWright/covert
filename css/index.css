@@ -370,6 +370,25 @@ main {
 	justify-content: center;
 }
 
+/*objectives*/
+
+.obj-sect  h1{
+    color: #0b96e0;
+	display: flex;
+	text-align: center; 
+	align-items: center;
+	justify-content: center;
+}
+
+.obj-sect  p{
+    color: #222a2a;
+	display: flex;
+	text-align: left; 
+	align-items: left;
+	justify-content: left;
+}
+
+
 /*Partners carosuel*/
 
 #partners {
